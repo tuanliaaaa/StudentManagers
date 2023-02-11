@@ -1,7 +1,7 @@
 
 if (localStorage.getItem("Token") )
 {
-    window.location='https://www.facebook.com';
+    window.location='/Home';
 }   
 function loginByEnter()
 {
@@ -41,7 +41,7 @@ function login()
        if(xhttp.status==200)
        {
            localStorage.setItem("Token", tokenResponse['access']);
-           window.location='https://www.facebook.com';
+           window.location='/Home';
            
        }
        else

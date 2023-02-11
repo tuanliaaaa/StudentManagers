@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="https://portal.ptit.edu.vn/wp-content/uploads/2016/04/ptit-logo.png">
+    <title>PTIT</title>
+    <link rel="stylesheet" href="../static/css/Home.css">
+</head>
+<body>
+    <div id="header">
+        <div class="header__top">
+          <div class="header__logo">
+              <img  src="https://portal.ptit.edu.vn/wp-content/uploads/2016/04/ptit-logo.png" alt="loading"/>
+          </div>
+          <div class="header__title">
+              <h1><b>Học Viện Công Nghệ Bưu Chính Viễn Thông</b></h1>
+              <p><b>Posts and Telecommunications Institute of Technology</b></p>
+          </div>
+          <div class="clear"></div>
+        </div>
+        <div class="header__navbar">
+          <div class="header__navbar__listoption">
+            <ul>
+              <a href="#"><li>Xem Điểm</li></a>
+            </ul>
+          </div>
+          <div class="header__navbar__logout">
+            <a href="" onclick="LogOut()">Logout</a>
+          </div>
+          <div class="clear"></div>
+        </div>
+    </div>
+    <div id="container">
+        <div class="container__fiterByStudenName">
+          <label for="SearchByStudenName">Tìm kiếm Học Sinh theo tên:  </label>
+          <input id ="SearchByStudenName" type="search" placeholder="Nhập Tên Học Sinh" onkeyup="SearchByEnter()">
+        </div>
+        <div class="container__listStudent">
+          <table id="table__Studentlist" >
+            <thead>
+                <tr>
+                    <th>Tên Học Sinh</th>
+                    <th>Mã Sinh Viên</th>
+                    <th>Điểm</th>
+                </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td> </td>
+                <td> </td>
+                <td> </td>
+               
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+    </div>
+    <script src="../static/js/Home.js"></script>
+</body>
+</html>
