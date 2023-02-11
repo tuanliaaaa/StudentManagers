@@ -42,6 +42,7 @@ INSTALLED_APPS = [
     'UserRole',
     'Student',
     'Home',
+    'rest_framework',
 ]
 
 MIDDLEWARE = [
