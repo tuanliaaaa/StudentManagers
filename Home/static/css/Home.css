@@ -103,6 +103,7 @@ body{
     border-radius: 5px;
     margin-bottom: 60px;
     border: 1px solid #ccc;
+    min-width: 400px;
 }
 #container .container__listStudent{
     margin-top: 20px;

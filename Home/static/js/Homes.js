@@ -29,9 +29,13 @@ function GetStudentByStudentName(){
             localStorage.removeItem('Token');
             window.location='/Login';
         }
-        else if(xhttp.status==404)
+        else if(xhttp.status==204)
         {
-            alert("Không có sinh viên nào")
+            alert("Không có sinh viên nào");
+        }
+        else if(xhttp.status==500)
+        {
+            alert("request không hợp lê");
         }
         var studentsJsons=xhttp.responseText;
         var students= JSON.parse(studentsJsons);
