@@ -4,4 +4,5 @@ from User.userModels import User
 class Student(models.Model):
     StudentName = models.CharField(max_length=225)
     StudentCode = models.CharField(max_length=225)
-    Score = models.FloatField
+    Scores = models.FloatField(null=True)
+    User = models.ForeignKey(User,on_delete=models.CASCADE,null=True)
